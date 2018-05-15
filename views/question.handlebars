@@ -1,0 +1,11 @@
+{{question.questionContent}}
+Total vote: {{totalVote}}
+Vote yes: {{question.yes}}
+Vote no: {{question.no}}
+ID: {{questionID}}
+<form class="" action="/api/vote/{{questionID}}/1" method="post">
+  <button>YES</button>
+</form>
+<form class="" action="/api/vote/{{questionID}}/0" method="post">
+  <button>NO</button>
+</form>

@@ -1,0 +1,9 @@
+<h1>Home view</h1>
+  {{questionContent}}
+  {{questionID}}
+  <form action="/api/vote/{{questionID}}/1" method="POST">
+    <button>Yes</button>
+  </form>
+  <form action="/api/vote/{{questionID}}/0" method="POST"> 
+    <button>No</button>
+  </form>
